@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Frontend</title></head>
+<body>
+  <h1>Express Frontend</h1>
+  <button onclick="check()">Call Backend</button>
+  <p id="result"></p>
+  <script>
+    async function check() {
+      const res = await fetch("/api-proxy");
+      const data = await res.json();
+      document.getElementById("result").innerText = JSON.stringify(data);
+    }
+  </script>
+</body>
+</html>
