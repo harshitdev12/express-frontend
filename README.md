@@ -1,0 +1,1 @@
+"Testing automated Jenkins pipeline."
